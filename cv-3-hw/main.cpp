@@ -85,7 +85,7 @@ Poloha * Factura::odebratPolozku(std::string name) {
     Poloha * tmp = nullptr;
 
     for (int i = 0; i < this -> pocetPolozek; i++){
-        if (this->polozky[i]->getName() == name){ /// stirng compare fix
+        if (this->polozky[i]->getName() == name){
             tmp = polozky[i];
             for (int j = i;  j < this->pocetPolozek -1; j++){
                 this->polozky[j] = this->polozky[j+1];
@@ -93,7 +93,6 @@ Poloha * Factura::odebratPolozku(std::string name) {
             this->pocetPolozek --;
             break;
         }
-        // добавить сдвиг масива
     }
     return tmp;
 }
