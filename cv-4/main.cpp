@@ -133,11 +133,11 @@ Bank::Bank(int c, int a) {
 
 Bank::~Bank(){
     for (int i=0; i< this->accountsCount; i++){
-        delete [] this->accounts[i];
+        delete this->accounts[i];
     }
     delete [] this->accounts;
     for (int i=0; i<clientsCount; i++){
-        delete [] this->clients[i];
+        delete  this->clients[i];
     }
     delete [] this->clients;
 
@@ -236,7 +236,7 @@ int main(){
     monoBank->createAccount(5, monoBank->createClient(4,"koala"), 0.035)->Deposit(10);
     for (int i = 6; i<=10; i++)
         monoBank->createAccount(i, monoBank->createClient(i, "Name"))->Deposit(1000);
-    // use gwtAccount ad withdraw
+
     monoBank->createAccount(11, monoBank->createClient(11, "Name1")); // acccount is not added
 
     monoBank->getAccount(5)->Deposit(1000); // added to koala 1000
@@ -248,10 +248,6 @@ int main(){
     monoBank->addInterest();
     monoBank->print_stats();
 
-    //delete monoBank;
+    delete monoBank;
     return  0;
 }
-
-//
-//bank maxclients
-// bank maxaccounts
