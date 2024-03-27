@@ -54,5 +54,7 @@ private:
     Route * routes;
 
 public:
+    Bus * getVehicle(int id);
+    
 };
 
