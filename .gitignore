@@ -1,5 +1,4 @@
-./main
-./main.dSYM
-./main.dSYM/Contents
-./.idea
-./.idea/workspace.xml
+main
+main.dSYM/
+.idea/
+.idea
