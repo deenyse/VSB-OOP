@@ -11,14 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f082e851-0ef3-46d4-920f-5d82c65e54d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-5/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-5/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.dSYM/Contents/Info.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.dSYM/Contents/Resources/DWARF/main" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.dSYM/Contents/Resources/Relocations/aarch64/main.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +112,7 @@
       <workItem from="1710937260135" duration="1955000" />
       <workItem from="1710940392968" duration="6594000" />
       <workItem from="1711217458653" duration="5096000" />
-      <workItem from="1711545377294" duration="14452000" />
+      <workItem from="1711545377294" duration="14532000" />
     </task>
     <servers />
   </component>
