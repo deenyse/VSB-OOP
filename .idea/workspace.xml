@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f082e851-0ef3-46d4-920f-5d82c65e54d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-6/Account.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-6/Account.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-6/Bank.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-6/Bank.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-6/Client.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-6/Client.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-6/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +29,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="main.cpp (5)" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -41,27 +51,26 @@
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mbpdenys/CLionProjects/VSB_OOP&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cv-5" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.main.cpp (4)">
-    <configuration name="main.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VSB_OOP" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
-      <option name="sourceFile" value="cv-3/main.cpp" />
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="C/C++ File.main.cpp (5)">
     <configuration name="main.cpp (2)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VSB_OOP" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="cv-3-hw/main.cpp" />
       <method v="2">
@@ -80,19 +89,32 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main.cpp (5)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VSB_OOP" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp (5)">
+      <option name="sourceFile" value="cv-6/main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VSB_OOP" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="cv-2-hw/main.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="C/C++ File.main.cpp (2)" />
+      <item itemvalue="C/C++ File.main.cpp (3)" />
+      <item itemvalue="C/C++ File.main.cpp (4)" />
+      <item itemvalue="C/C++ File.main.cpp (5)" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="C/C++ File.main.cpp (4)" />
+        <item itemvalue="C/C++ File.main.cpp (5)" />
         <item itemvalue="C/C++ File.main.cpp (3)" />
+        <item itemvalue="C/C++ File.main.cpp (4)" />
         <item itemvalue="C/C++ File.main.cpp (2)" />
         <item itemvalue="C/C++ File.main.cpp" />
-        <item itemvalue="C/C++ File.main.cpp (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -112,12 +134,18 @@
       <workItem from="1710937260135" duration="1955000" />
       <workItem from="1710940392968" duration="6594000" />
       <workItem from="1711217458653" duration="5096000" />
-      <workItem from="1711545377294" duration="14532000" />
+      <workItem from="1711545377294" duration="15130000" />
+      <workItem from="1712146752086" duration="10849000" />
+      <workItem from="1712503149674" duration="2803000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
