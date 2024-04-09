@@ -27,6 +27,9 @@ int main(){
     monoBank->addInterest();
     monoBank->print_stats();
 
+    monoBank->modifiIneterestRate(-1);
+    monoBank->addInterest();
+    monoBank->print_stats();
 
     delete monoBank;
     return  0;

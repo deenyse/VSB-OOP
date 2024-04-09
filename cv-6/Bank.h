@@ -7,13 +7,15 @@ private:
     int maxClients;
     Account** accounts;
     int maxAccounts;
+    static double defaultIR;
 public:
     Bank(int c, int a);
     ~Bank();
 
     Client* getClient(int code);
     Account* getAccount(int number);
-
+    double getDefaultIR();
+    void modifiIneterestRate(double rate);
     Client* createClient(int code, string name);
 
     Account* createAccount(int n, Client* c);

@@ -2,6 +2,10 @@
 #include "Bank.h"
 #include "Account.h"
 
+double Bank::defaultIR = 0.05;
+
+double Bank::getDefaultIR() { return Bank::defaultIR; } ;
+
 Bank::Bank(int c, int a) {
     this->clients = new Client * [c]();
     this->maxClients = c;
@@ -51,7 +55,7 @@ Account * Bank::createAccount(int n, Client *c) {
     if(Account::getAccountsCount() >= this->maxAccounts)
         return nullptr;
 
-    this->accounts[Account::getAccountsCount() -1] =new Account(n,c);
+    this->accounts[Account::getAccountsCount() -1] =new Account(n,c, Bank::getDefaultIR() ,false);
     return this->accounts[Account::getAccountsCount()-1];
 }
 
@@ -59,14 +63,14 @@ Account * Bank::createAccount(int n, Client *c, Client *p) {
     if(Account::getAccountsCount() >= this->maxAccounts)
         return nullptr;
 
-    this->accounts[Account::getAccountsCount() -1] =new Account(n,c,p);
+    this->accounts[Account::getAccountsCount() -1] =new Account(n,c, Bank::getDefaultIR(), false,p );
     return this->accounts[Account::getAccountsCount()-1];
 }
 Account * Bank::createAccount(int n, Client *c, double ir) {
     if(Account::getAccountsCount() >= this->maxAccounts)
         return nullptr;
 
-    this->accounts[Account::getAccountsCount() -1] =new Account(n,c,ir);
+    this->accounts[Account::getAccountsCount() -1] =new Account(n,c,ir, true);
     return this->accounts[Account::getAccountsCount()-1];
 }
 
@@ -74,7 +78,7 @@ Account * Bank::createAccount(int n, Client *c, Client* p, double ir) {
     if(Account::getAccountsCount() >= this->maxAccounts)
         return nullptr;
 
-    this->accounts[Account::getAccountsCount() - 1] =new Account(n,c,p,ir);
+    this->accounts[Account::getAccountsCount() - 1] =new Account(n,c,ir, true ,p);
     return this->accounts[Account::getAccountsCount()-1];
 }
 
@@ -87,7 +91,7 @@ void Bank::addInterest() {
 void Bank::print_stats() {
     cout<< endl<< "Accounts:"  << endl;
     for (int i=0; i< Account::getAccountsCount(); i++){
-        cout << "Number: " << this->accounts[i]->getNumber() << " Balance: " << this->accounts[i]->getBalance() << " ir: " << this->accounts[i]->getInterestRate() * 100 << "% Owner: " << this->accounts[i]->getOwner()->getName();
+        cout << "Number: " << this->accounts[i]->getNumber() << " Balance: " << this->accounts[i]->getBalance() << " ir: " << this->accounts[i]->getInterestRate() * 100 <<"% isCustomIR:"<<this->accounts[i]->getIsCustomIR() << " Owner: " << this->accounts[i]->getOwner()->getName();
         if (this->accounts[i]->getPartner() != nullptr)
             cout << " Partner: " << this->accounts[i]->getPartner()->getName() << " code: " << this->accounts[i]->getPartner()->getCode();
         cout << endl;
@@ -96,5 +100,14 @@ void Bank::print_stats() {
 
     for (int i=0; i<Client::getClientsCount(); i++){
         cout << "Code: " << this->clients[i]->getCode() << " Name: " << this->clients[i]->getName() << endl;
+    }
+}
+
+void Bank::modifiIneterestRate(double rate) {
+    Bank::defaultIR = rate;
+    for (int i=0; i<Account::getAccountsCount(); i++) {
+        if (!this->accounts[i]->getIsCustomIR()){
+            this->accounts[i]->setNewIR(rate);
+        }
     }
 }

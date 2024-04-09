@@ -12,10 +12,8 @@ private:
     static int accountCount;
 
 public:
-    Account(int n, Client* c);
-    Account(int n, Client* c, Client *p);
-    Account(int n, Client* c, double ir);
-    Account(int n, Client* c, Client *p, double ir);
+
+    Account(int n, Client* c, double ir, bool isCustomIR, Client *p = nullptr);
     ~Account();
 
     static int getAccountsCount();
@@ -31,6 +29,7 @@ public:
 
     void Deposit(double a);//+ depose money
     bool Withdraw(double a); // +withdraw money
+    void setNewIR(double a);
     void addInterest(); //+ add interest add % to whole accounts
 };
 

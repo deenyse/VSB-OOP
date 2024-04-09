@@ -10,14 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f082e851-0ef3-46d4-920f-5d82c65e54d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cv-6/Account.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cv-6/Account.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cv-6/Bank.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cv-6/Bank.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cv-6/Client.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cv-6/Client.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cv-6/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-6/Account.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/Account.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-6/Account.h" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/Account.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-6/Bank.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/Bank.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-6/Bank.h" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/Bank.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-6/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,7 @@
       <workItem from="1711217458653" duration="5096000" />
       <workItem from="1711545377294" duration="15130000" />
       <workItem from="1712146752086" duration="10849000" />
-      <workItem from="1712503149674" duration="2803000" />
+      <workItem from="1712503149674" duration="10655000" />
     </task>
     <servers />
   </component>
