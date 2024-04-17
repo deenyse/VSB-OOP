@@ -10,12 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f082e851-0ef3-46d4-920f-5d82c65e54d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cv-7-hw/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/Account.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/Account.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/Bank.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/Bank.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/Client.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/Client.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/ParthnerAccount.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/ParthnerAccount.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cv-7/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-6/Account.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/Account.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-6/Account.h" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/Account.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-6/Bank.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/Bank.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-6/Bank.h" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/Bank.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-6/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-6/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,28 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;assignee&quot;: &quot;deenyse&quot;,
+      &quot;author&quot;: &quot;deenyse&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;deenyse&quot;,
+    &quot;author&quot;: &quot;deenyse&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c9a7f418-75ed-4ed0-b163-834e72bde5f2" />
+        <option name="url" value="https://github.com/deenyse/VSB-OOP.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="OCResolveContextSettings">
     <option name="configuration" value="main.cpp (5)" />
@@ -68,7 +95,13 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.main.cpp (5)">
+  <component name="RunManager" selected="C/C++ File.main.cpp (1)">
+    <configuration name="main.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VSB_OOP" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
+      <option name="sourceFile" value="cv-7-hw/main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main.cpp (2)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VSB_OOP" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
       <option name="sourceFile" value="cv-3-hw/main.cpp" />
       <method v="2">
@@ -93,14 +126,8 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="VSB_OOP" TARGET_NAME="main.cpp" CONFIG_NAME="main.cpp">
-      <option name="sourceFile" value="cv-2-hw/main.cpp" />
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="C/C++ File.main.cpp" />
+      <item itemvalue="C/C++ File.main.cpp (1)" />
       <item itemvalue="C/C++ File.main.cpp (2)" />
       <item itemvalue="C/C++ File.main.cpp (3)" />
       <item itemvalue="C/C++ File.main.cpp (4)" />
@@ -108,11 +135,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.main.cpp (1)" />
         <item itemvalue="C/C++ File.main.cpp (5)" />
         <item itemvalue="C/C++ File.main.cpp (3)" />
         <item itemvalue="C/C++ File.main.cpp (4)" />
         <item itemvalue="C/C++ File.main.cpp (2)" />
-        <item itemvalue="C/C++ File.main.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +161,9 @@
       <workItem from="1711217458653" duration="5096000" />
       <workItem from="1711545377294" duration="15130000" />
       <workItem from="1712146752086" duration="10849000" />
-      <workItem from="1712503149674" duration="10655000" />
+      <workItem from="1712503149674" duration="11358000" />
+      <workItem from="1712751384530" duration="7779000" />
+      <workItem from="1713356297158" duration="941000" />
     </task>
     <servers />
   </component>
