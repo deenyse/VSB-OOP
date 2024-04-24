@@ -1,4 +1,3 @@
-#pragma  once
 #include "ParthnerAccount.h"
 using namespace std;
 

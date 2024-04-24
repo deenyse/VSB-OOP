@@ -4,12 +4,12 @@
 class Account {
 private:
     int number;
-    double balance;
     double interestRate;
     Client* owner;
     bool isCustomIR;
     static int accountCount;
-
+protected:
+    double balance;
 public:
 
     Account(int n, Client* c, double ir, bool isCustomIR);
