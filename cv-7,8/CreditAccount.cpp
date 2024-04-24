@@ -21,3 +21,7 @@ bool CreditAccount::Withdraw(double a) {
     return false;
 }
 
+void CreditAccount::printStats(){
+    cout << "Number: " << this->getNumber() << " Balance: " << this->getBalance() << " ir: " << this->getInterestRate() * 100 <<"% isCustomIR:"<<this->getIsCustomIR() << " Owner: " << this->getOwner()->getName();
+    cout << " Credit: " << this->getCredit();
+}

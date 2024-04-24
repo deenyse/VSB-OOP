@@ -8,6 +8,8 @@ private:
 public:
     ParthnerAccount(int n, Client* c, double ir, bool isCustomIR, Client * partner);
     Client* getPartner() const { return partner; }
+
+    void printStats() override;
 };
 
 

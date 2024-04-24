@@ -1,6 +1,5 @@
 #include <iostream>
 #include "Bank.h"
-
 double Bank::defaultIR = 0.05;
 
 double Bank::getDefaultIR() { return Bank::defaultIR; } ;
@@ -59,13 +58,13 @@ Account * Bank::createAccount(int n, Client *c) {
     return this->accounts[Account::getAccountsCount()-1];
 }
 
-//ParthnerAccount * Bank::createAccount(int n, Client *c, Client *p) {
-//    if(Account::getAccountsCount() >= this->maxAccounts)
-//        return nullptr;
-//
-//    this->accounts[Account::getAccountsCount() -1] =new ParthnerAccount(n,c, Bank::getDefaultIR(), false,p );
-//    return this->accounts[Account::getAccountsCount()-1];
-//}
+Account * Bank::createAccount(int n, Client *c, Client *p) {
+    if(Account::getAccountsCount() >= this->maxAccounts)
+        return nullptr;
+
+    this->accounts[Account::getAccountsCount() -1] =new ParthnerAccount(n,c, Bank::getDefaultIR(), false,p );
+    return this->accounts[Account::getAccountsCount()-1];
+}
 Account * Bank::createAccount(int n, Client *c, double ir) {
     if(Account::getAccountsCount() >= this->maxAccounts)
         return nullptr;
@@ -74,14 +73,29 @@ Account * Bank::createAccount(int n, Client *c, double ir) {
     return this->accounts[Account::getAccountsCount()-1];
 }
 
-//ParthnerAccount * Bank::createAccount(int n, Client *c, Client* p, double ir) {
-//    if(Account::getAccountsCount() >= this->maxAccounts)
-//        return nullptr;
-//    auto tmp = new ParthnerAccount(n,c,ir, true ,p);;
-//    this->accounts[Account::getAccountsCount() - 1] = tmp;
-////    return this->accounts[Account::getAccountsCount()-1];
-//    return  tmp;
-//}
+Account * Bank::createAccount(int n, Client *c, Client* p, double ir) {
+    if(Account::getAccountsCount() >= this->maxAccounts)
+        return nullptr;
+
+    this->accounts[Account::getAccountsCount() -1] =new ParthnerAccount(n,c, ir, true,p );
+    return this->accounts[Account::getAccountsCount()-1];
+}
+
+Account* Bank::createAccount(int n, double c, Client * o){
+    if(Account::getAccountsCount() >= this->maxAccounts)
+        return nullptr;
+
+    this->accounts[Account::getAccountsCount() -1] =new CreditAccount(n,o, c, Bank::getDefaultIR(),false );
+    return this->accounts[Account::getAccountsCount()-1];
+}
+
+Account* Bank::createAccount(int n, double c, Client * o, double ir){
+    if(Account::getAccountsCount() >= this->maxAccounts)
+        return nullptr;
+
+    this->accounts[Account::getAccountsCount() -1] =new CreditAccount(n,o, c, ir, true );
+    return this->accounts[Account::getAccountsCount()-1];
+}
 
 void Bank::addInterest() {
     for(int i=0;i < Account::getAccountsCount(); i++) {
@@ -91,8 +105,10 @@ void Bank::addInterest() {
 
 void Bank::print_stats() {
     cout<< endl<< "Accounts:"  << endl;
+    // CALL HERE OWN MWTHOD INSTEAD OF GETTING ALL PROPERTIES SEPARETLY
     for (int i=0; i< Account::getAccountsCount(); i++){
-        cout << "Number: " << this->accounts[i]->getNumber() << " Balance: " << this->accounts[i]->getBalance() << " ir: " << this->accounts[i]->getInterestRate() * 100 <<"% isCustomIR:"<<this->accounts[i]->getIsCustomIR() << " Owner: " << this->accounts[i]->getOwner()->getName();
+        this->accounts[i]->printStats();
+//        cout << "Number: " << this->accounts[i]->getNumber() << " Balance: " << this->accounts[i]->getBalance() << " ir: " << this->accounts[i]->getInterestRate() * 100 <<"% isCustomIR:"<<this->accounts[i]->getIsCustomIR() << " Owner: " << this->accounts[i]->getOwner()->getName();
 //        if (this->accounts[i]->getPartner() != nullptr)
 //            cout << " Partner: " << this->accounts[i]->getPartner()->getName() << " code: " << this->accounts[i]->getPartner()->getCode();
         cout << endl;

@@ -41,3 +41,8 @@ int Account::getAccountsCount() {
 void Account::setNewIR(double newIR) {
         this->interestRate = newIR;
 }
+
+void Account::printStats() {
+    cout << "Number: " << this->getNumber() << " Balance: " << this->getBalance() << " ir: " << this->getInterestRate() * 100 <<"% isCustomIR:"<<this->getIsCustomIR() << " Owner: " << this->getOwner()->getName();
+//    cout << "Partner: " << this->getPartner()->getName() << " code: " << this->getPartner()->getCode();
+}

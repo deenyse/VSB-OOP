@@ -1,7 +1,7 @@
 #pragma once
 #include "Account.h"
 #include "ParthnerAccount.h"
-
+#include "CreditAccount.h"
 class Bank {
 private:
     Client** clients;
@@ -20,9 +20,11 @@ public:
     Client* createClient(int code, string name);
 
     Account* createAccount(int n, Client* c);
-    ParthnerAccount* createAccount(int n, Client* c, Client *p);
+    Account* createAccount(int n, Client* c, Client *p);
+    Account* createAccount(int n, double credit, Client * o);
+    Account* createAccount(int n, double credit, Client * o, double ir);
     Account* createAccount(int n, Client* c, double ir);
-    ParthnerAccount* createAccount(int n, Client* c, Client *p, double ir);
+    Account* createAccount(int n, Client* c, Client *p, double ir);
 
     void addInterest();
     void print_stats();
