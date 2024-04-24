@@ -1,59 +1,68 @@
 #include <iostream>
 #include <cmath>
+using namespace std;
 
-class Shape {
+class Figure {
 public:
-    double Content() const {
-        return 0.0; // Default implementation for content
+    virtual double Content()  {
+        return 0.0;
     }
 
-    double Perimeter() const {
-        return 0.0; // Default implementation for perimeter
+    virtual double Perimeter()  {
+        return 0.0;
     }
 };
 
-class Rectangle : public Shape {
+class Rectangle : public Figure {
 private:
     double length;
     double width;
 public:
     Rectangle(double l, double w) : length(l), width(w) {}
 
-    double Content() const {
+    double Content() {
         return length * width;
     }
 
-    double Perimeter() const {
+    double Perimeter()  {
         return 2 * (length + width);
     }
 };
 
-class Circle : public Shape {
+class Circle : public Figure {
 private:
     double radius;
 public:
     Circle(double r) : radius(r) {}
 
-    double Content() const {
+    double Content()  {
         return M_PI * radius * radius;
     }
 
-    double Perimeter() const {
+    double Perimeter()  {
         return 2 * M_PI * radius;
     }
 };
 
 int main() {
-    Rectangle rect(5, 4);
-    Circle circle(3);
+    Figure ** figuresArray = new Figure*[8]();
 
-    std::cout << "Rectangle: " << std::endl;
-    std::cout << "Area: " << rect.Content() << std::endl;
-    std::cout << "Perimeter: " << rect.Perimeter() << std::endl;
+    for (int i = 0; i < 4; i++) {
+    figuresArray[i] = new Rectangle(10*i, 10*i*2);
+    }
+    for (int i = 4; i < 8; i++) {
+        figuresArray[i] = new Circle(5*i);
+    }
 
-    std::cout << "Circle: " << std::endl;
-    std::cout << "Area: " << circle.Content() << std::endl;
-    std::cout << "Perimeter: " << circle.Perimeter() << std::endl;
+    cout << "Figure content:" << endl;
+    for (int i = 0; i < 8; i++) {
+        cout << figuresArray[i]->Content() << endl;
+    }
+    cout << "Figure perimetr:" << endl;
+    for (int i = 0; i < 8; i++) {
+        cout << figuresArray[i]->Perimeter() << endl;
+    }
+
 
     return 0;
 }

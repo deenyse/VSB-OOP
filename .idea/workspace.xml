@@ -11,15 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f082e851-0ef3-46d4-920f-5d82c65e54d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/Account.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/Account.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/Account.h" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/Account.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/Bank.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/Bank.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/Bank.h" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/Bank.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/CreditAccount.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/CreditAccount.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/CreditAccount.h" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/CreditAccount.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/ParthnerAccount.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/ParthnerAccount.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/ParthnerAccount.h" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/ParthnerAccount.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cv-7,8/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-7,8/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv-8-hw/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cv-8-hw/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +155,7 @@
       <workItem from="1712503149674" duration="11358000" />
       <workItem from="1712751384530" duration="7779000" />
       <workItem from="1713356297158" duration="3805000" />
-      <workItem from="1713360425756" duration="7839000" />
+      <workItem from="1713360425756" duration="8591000" />
     </task>
     <servers />
   </component>
